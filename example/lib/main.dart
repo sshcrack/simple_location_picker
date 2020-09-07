@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_location_picker/simple_location_picker_screen.dart';
 import 'package:simple_location_picker/simple_location_result.dart';
-import 'package:simple_location_picker/simple_location_result.dart';
 import 'package:simple_location_picker/utils/slp_constants.dart';
 
 
@@ -46,6 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               SizedBox(height: 50),
+
+              // The button that opens the SimpleLocationPicker in display ONLY mode.
+              // This opens the SimpleLocationPicker to display a specific location on the map with a marker.
               RaisedButton(
                 child: Text("Display a location"),
                 onPressed: () {
@@ -63,6 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               SizedBox(height: 50),
+
+              // The button that opens the SimpleLocationPicker in picker mode.
+              // This opens the SimpleLocationPicker to allow the user to pick a location from the map.
+              // The SimpleLocationPicker returns SimpleLocationResult containing the lat, lng of the picked location.
               RaisedButton(
                 child: Text("Pick a Location"),
                 onPressed: () {
@@ -84,7 +90,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
               ),
+
               SizedBox(height: 50),
+              // Displays the picked location on the screen as text.
               _selectedLocation != null ? Text('SELECTED: (${_selectedLocation.latitude}, ${_selectedLocation.longitude})') : Container(),
             ],
           ),
