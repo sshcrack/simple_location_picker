@@ -15,7 +15,6 @@ import 'package:simple_location_picker/utils/slp_constants.dart';
 import 'simple_location_result.dart';
 
 class SimpleLocationPicker extends StatefulWidget {
-
   /// Sets the initial location - latitude that the map must be centered on.
   final double initialLatitude;
 

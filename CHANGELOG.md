@@ -1,3 +1,7 @@
+## [0.0.3] - 09/07/2020.
+
+* dartfmt on SimpleLocationPicker screen 
+
 ## [0.0.2] - 09/07/2020.
 
 * Incorporating comments from pub.dev to add comments and dartfmt.
