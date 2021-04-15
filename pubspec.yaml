@@ -12,7 +12,9 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  flutter_map: ^0.10.1
+  flutter_map:
+    git:
+      url: https://github.com/sshcrack/flutter_map.git
   latlong: ^0.6.1
 
 
