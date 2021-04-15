@@ -3,7 +3,7 @@
 
 /// SimpleLocationResult to return the result of the picked location
 
-import 'package:latlong/latlong.dart' as coordinates;
+import 'package:latlong2/latlong.dart' as coordinates;
 
 class SimpleLocationResult {
   /// The latitude of the result.
